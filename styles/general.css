@@ -1,0 +1,54 @@
+body
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url('../img/fondo.jpg') no-repeat center center fixed; 
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	color:#FFFFFF;
+}
+
+.width480px
+{
+	width:100%;	
+	
+}
+
+header
+{
+	text-align:left;
+	font-size: 26px;
+	width: 100%;
+	margin: auto;
+	padding-left: 20px;
+	padding-top: 14px;
+}
+
+.content
+{
+
+	margin:auto;
+	padding-left:7px;
+	padding-right:7px;
+	padding-bottom:7px;
+	margin-right:20px;
+	
+}
+
+.control2{
+	margin:auto;
+}
+
+ul{
+	
+	list-style-type: none;
+}
+
+.subtitle{padding-left:20px;margin-top:7px;}
+
+.A{margin-left:10px; margin-top:10px; background-color: rgb(44,44,44); opacity: 0.85; border-radius:7px; padding:7px; }
+
+a{text-decoration:none; color: #FFFFFF;}
+
+textarea{width:92%; margin:7px}

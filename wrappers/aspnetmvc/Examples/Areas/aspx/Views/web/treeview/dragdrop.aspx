@@ -1,0 +1,86 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Areas/aspx/Views/Shared/Web.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+<p>Drag and drop items within one TreeView or between the two.</p>
+
+<div class="treeview-back">
+
+    <%= Html.Kendo().TreeView()
+        .Name("treeview-left")
+        .DragAndDrop(true)
+        .Items(treeview =>
+        {
+            treeview.Add().Text("Furniture")
+                .Expanded(true)
+                .Items(furniture =>
+                {
+                    furniture.Add().Text("Tables & Chairs");
+                    furniture.Add().Text("Sofas");
+                    furniture.Add().Text("Occasional Furniture");
+                });
+
+            treeview.Add().Text("Decor")
+                .Expanded(true)
+                .Items(furniture =>
+                {
+                    furniture.Add().Text("Bed Linen");
+                    furniture.Add().Text("Curtains & Blinds");
+                    furniture.Add().Text("Carpets");
+                });
+        })
+    %>
+
+</div>
+
+<div class="treeview-back">
+
+    <%= Html.Kendo().TreeView()
+        .Name("treeview-right")
+        .DragAndDrop(true)
+        .Items(treeview =>
+        {
+            treeview.Add().Text("Storage")
+                .Expanded(true)
+                .Items(furniture =>
+                {
+                    furniture.Add().Text("Wall Shelving");
+                    furniture.Add().Text("Floor Shelving");
+                    furniture.Add().Text("Kids Storage");
+                });
+
+            treeview.Add().Text("Lights")
+                .Expanded(true)
+                .Items(furniture =>
+                {
+                    furniture.Add().Text("Ceiling");
+                    furniture.Add().Text("Table");
+                    furniture.Add().Text("Floor");
+                });
+        })
+    %>
+
+</div>
+
+<style scoped="scoped">
+
+.treeview-back 
+{
+    float: left;
+    width: 220px;
+    margin: 30px;
+    padding: 20px;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.45), inset 0 0 30px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.45), inset 0 0 30px rgba(0,0,0,0.07);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.45), inner 0 0 30px rgba(0,0,0,0.07);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+</style>
+
+</asp:Content>

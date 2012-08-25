@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "name": "Foxduino",
+  "description": "Foxduino an arduino remote controller for Firefox OS",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Enrique Mendoza Robaina and Tero de la Rosa",
+    "url": "http://www.enri.me"
+  },
+  "permissions": [
+    "sms",
+    "contacts",
+    "webcontacts-manage",
+    "settings"
+  ],
+  "locales": {
+    "pt-ES": {
+      "name": "Foxduino",
+      "description": "An arduino remote controller for Firefox OS"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "54": "/img/foxduino.png"
+  },
+  "installs_allowed_from": ["*"],
+  "appcache_path": "/owd.appcache",
+  "orientation": "portrait-primary"
+}

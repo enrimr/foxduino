@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98DE3BD7-E6ED-4900-A505-810EDE765CA7}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kendo.Mvc.Examples</RootNamespace>
+    <AssemblyName>Kendo.Mvc.Examples</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Kendo.Mvc" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\aspx\ASPXAreaRegistration.cs" />
+    <Compile Include="Areas\razor\RazorAreaRegistration.cs" />
+    <Compile Include="Controllers\DataViz\Area_Charts\Date_AxisController.cs" />
+    <Compile Include="Controllers\DataViz\Area_Charts\Grouped_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Area_Charts\Multiple_AxesController.cs" />
+    <Compile Include="Controllers\DataViz\Area_Charts\Stacked_AreaController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\Grouped_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\Date_AxisController.cs" />
+    <Compile Include="Controllers\DataViz\Bubble_Charts\Grouped_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Bubble_Charts\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Bubble_Charts\Local_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Bubble_Charts\Remote_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Donut_Charts\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Donut_Charts\Local_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Donut_Charts\Donut_LabelsController.cs" />
+    <Compile Include="Controllers\DataViz\Donut_Charts\Remote_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Line_Charts\Date_AxisController.cs" />
+    <Compile Include="Controllers\DataViz\Line_Charts\Grouped_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Line_Charts\Multiple_AxesController.cs" />
+    <Compile Include="Controllers\DataViz\Line_Charts\Stacked_LineController.cs" />
+    <Compile Include="Controllers\DataViz\Scatter_Charts\Date_AxisController.cs" />
+    <Compile Include="Controllers\DataViz\Scatter_Charts\Grouped_DataController.cs" />
+    <Compile Include="Controllers\Web\AutoComplete\ApiController.cs" />
+    <Compile Include="Controllers\Web\AutoComplete\ClientFilteringController.cs" />
+    <Compile Include="Controllers\Web\AutoComplete\EventsController.cs" />
+    <Compile Include="Controllers\Web\AutoComplete\ServerFilteringController.cs" />
+    <Compile Include="Controllers\Web\AutoComplete\TemplateController.cs" />
+    <Compile Include="Controllers\Web\Calendar\GlobalizationController.cs" />
+    <Compile Include="Controllers\Web\Calendar\SelectActionController.cs" />
+    <Compile Include="Controllers\Web\Calendar\IndexController.cs" />
+    <Compile Include="Controllers\Web\Calendar\ApiController.cs" />
+    <Compile Include="Controllers\Web\Calendar\EventsController.cs" />
+    <Compile Include="Controllers\Web\Calendar\TemplateController.cs" />
+    <Compile Include="Controllers\DataViz\Api\EventsController.cs" />
+    <Compile Include="Controllers\DataViz\Api\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Area_Charts\Remote_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Area_Charts\Local_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\IndexController.cs" />
+    <Compile Include="Controllers\Web\ComboBox\ClientFilteringController.cs" />
+    <Compile Include="Controllers\Web\ComboBox\ApiController.cs" />
+    <Compile Include="Controllers\Web\ComboBox\CascadingComboBoxController.cs" />
+    <Compile Include="Controllers\Web\ComboBox\EventsController.cs" />
+    <Compile Include="Controllers\Web\ComboBox\ServerFilteringController.cs" />
+    <Compile Include="Controllers\Web\ComboBox\TemplateController.cs" />
+    <Compile Include="Controllers\DataViz\Area_Charts\IndexController.cs" />
+    <Compile Include="Controllers\Web\ComboBox\IndexController.cs" />
+    <Compile Include="Controllers\Web\AutoComplete\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\ColumnController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\Stacked_BarController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\Grouped_Stacked_BarController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\Multiple_AxesController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\Remote_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Bar_Charts\Local_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Customization\PlotBandsController.cs" />
+    <Compile Include="Controllers\DataViz\Dashboards\Car_DashboardController.cs" />
+    <Compile Include="Controllers\DataViz\Scatter_Charts\Multiple_AxesController.cs" />
+    <Compile Include="Controllers\DataViz\Scatter_Charts\Scatter_LineController.cs" />
+    <Compile Include="Controllers\DataViz\Scatter_Charts\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Scatter_Charts\Local_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Scatter_Charts\Remote_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Pie_Charts\Pie_LabelsController.cs" />
+    <Compile Include="Controllers\DataViz\Pie_Charts\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Pie_Charts\Local_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Pie_Charts\Remote_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Line_Charts\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Line_Charts\Local_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Line_Charts\Remote_DataController.cs" />
+    <Compile Include="Controllers\DataViz\Radial_Gauge\Scale_OptionsController.cs" />
+    <Compile Include="Controllers\DataViz\Radial_Gauge\IndexController.cs" />
+    <Compile Include="Controllers\Web\DatePicker\ApiController.cs" />
+    <Compile Include="Controllers\Web\DatePicker\GlobalizationController.cs" />
+    <Compile Include="Controllers\Web\DatePicker\EventsController.cs" />
+    <Compile Include="Controllers\Web\DatePicker\TemplateController.cs" />
+    <Compile Include="Controllers\Web\DatePicker\RangeSelectionController.cs" />
+    <Compile Include="Controllers\Web\DateTimePicker\ApiController.cs" />
+    <Compile Include="Controllers\Web\DateTimePicker\EventsController.cs" />
+    <Compile Include="Controllers\Web\DateTimePicker\GlobalizationController.cs" />
+    <Compile Include="Controllers\Web\DateTimePicker\TemplateController.cs" />
+    <Compile Include="Controllers\Web\DateTimePicker\RangeSelectionController.cs" />
+    <Compile Include="Controllers\Web\DropDownList\ApiController.cs" />
+    <Compile Include="Controllers\Web\DropDownList\CascadingDropDownListController.cs" />
+    <Compile Include="Controllers\Web\DropDownList\EventsController.cs" />
+    <Compile Include="Controllers\Web\DropDownList\TemplateController.cs" />
+    <Compile Include="Controllers\Web\DropDownList\RemoteDataSourceController.cs" />
+    <Compile Include="Controllers\Web\DropDownList\IndexController.cs" />
+    <Compile Include="Controllers\Web\Editor\Custom_ToolsController.cs" />
+    <Compile Include="Controllers\Web\Editor\StylesController.cs" />
+    <Compile Include="Controllers\Web\Editor\SnippetsController.cs" />
+    <Compile Include="Controllers\Web\Editor\All_ToolsController.cs" />
+    <Compile Include="Controllers\Web\Editor\GlobalizationController.cs" />
+    <Compile Include="Controllers\Web\Editor\EventsController.cs" />
+    <Compile Include="Controllers\Web\Editor\ApiController.cs" />
+    <Compile Include="Controllers\Web\Editor\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Linear_Gauge\IndexController.cs" />
+    <Compile Include="Controllers\DataViz\Linear_Gauge\Scale_OptoinsController.cs" />
+    <Compile Include="Controllers\Web\Grid\AjaxBindingController.cs" />
+    <Compile Include="Controllers\Web\Grid\Column_ReorderingController.cs" />
+    <Compile Include="Controllers\Web\Grid\Column_ResizingController.cs" />
+    <Compile Include="Controllers\Web\Grid\ApiController.cs" />
+    <Compile Include="Controllers\Web\Grid\ColumnSettingsController.cs" />
+    <Compile Include="Controllers\Web\Grid\Column_MenuController.cs" />
+    <Compile Include="Controllers\Web\Grid\ForeignKeyColumnController.cs" />
+    <Compile Include="Controllers\Web\Grid\Editing_CustomController.cs" />
+    <Compile Include="Controllers\Web\Grid\PagingController.cs" />
+    <Compile Include="Controllers\Web\Grid\HeaderTemplateController.cs" />
+    <Compile Include="Controllers\Web\Grid\Custom_CommandController.cs" />
+    <Compile Include="Controllers\Web\Grid\GlobalizationController.cs" />
+    <Compile Include="Controllers\Web\Grid\RowTemplateController.cs" />
+    <Compile Include="Controllers\Web\Grid\ServerRowTemplateController.cs" />
+    <Compile Include="Controllers\Web\Grid\Virtualization_Remote_DataController.cs" />
+    <Compile Include="Controllers\Web\Grid\EditingCustomValidationController.cs" />
+    <Compile Include="Controllers\Web\Grid\SelectionController.cs" />
+    <Compile Include="Controllers\Web\Grid\ServerDetailsController.cs" />
+    <Compile Include="Controllers\Web\Grid\DetailTemplateController.cs" />
+    <Compile Include="Controllers\Web\Grid\ServerHierarchyController.cs" />
+    <Compile Include="Controllers\Web\Grid\Local_DataController.cs" />
+    <Compile Include="Controllers\Web\Grid\Editing_InlineController.cs" />
+    <Compile Include="Controllers\Web\Grid\EditingController.cs" />
+    <Compile Include="Controllers\Web\DateTimePicker\IndexController.cs" />
+    <Compile Include="Controllers\Web\Grid\HierarchyController.cs" />
+    <Compile Include="Controllers\Web\Grid\ServerEditingController.cs" />
+    <Compile Include="Controllers\Web\Grid\ServerBindingController.cs" />
+    <Compile Include="Controllers\Web\Grid\CustomServerBindingController.cs" />
+    <Compile Include="Controllers\Web\Grid\CustomAjaxBindingController.cs" />
+    <Compile Include="Controllers\Web\ListView\SelectionController.cs" />
+    <Compile Include="Controllers\Web\ListView\EditingController.cs" />
+    <Compile Include="Controllers\Web\ListView\IndexController.cs" />
+    <Compile Include="Controllers\Web\Menu\ApiController.cs" />
+    <Compile Include="Controllers\Web\Menu\ModelBindingController.cs" />
+    <Compile Include="Controllers\Web\Menu\SiteMapBindingController.cs" />
+    <Compile Include="Controllers\Web\Menu\EventsController.cs" />
+    <Compile Include="Controllers\Web\Menu\OrientationController.cs" />
+    <Compile Include="Controllers\Web\Menu\ImagesController.cs" />
+    <Compile Include="Controllers\Web\Menu\IndexController.cs" />
+    <Compile Include="Controllers\Web\NumericTextBox\GlobalizationController.cs" />
+    <Compile Include="Controllers\Web\PanelBar\AjaxController.cs" />
+    <Compile Include="Controllers\Web\PanelBar\ApiController.cs" />
+    <Compile Include="Controllers\Web\PanelBar\AnimationController.cs" />
+    <Compile Include="Controllers\Web\PanelBar\EventsController.cs" />
+    <Compile Include="Controllers\Web\PanelBar\ImagesController.cs" />
+    <Compile Include="Controllers\Web\PanelBar\IndexController.cs" />
+    <Compile Include="Controllers\Web\Splitter\AjaxController.cs" />
+    <Compile Include="Controllers\Web\Splitter\ApiController.cs" />
+    <Compile Include="Controllers\Web\Splitter\EventsController.cs" />
+    <Compile Include="Controllers\Web\Splitter\IndexController.cs" />
+    <Compile Include="Controllers\Web\TabStrip\AjaxController.cs" />
+    <Compile Include="Controllers\Web\TabStrip\ApiController.cs" />
+    <Compile Include="Controllers\Web\TabStrip\AnimationController.cs" />
+    <Compile Include="Controllers\Web\TabStrip\EventsController.cs" />
+    <Compile Include="Controllers\Web\TabStrip\ImagesController.cs" />
+    <Compile Include="Controllers\Web\TabStrip\IndexController.cs" />
+    <Compile Include="Controllers\Web\Grid\AggregatesController.cs" />
+    <Compile Include="Controllers\Web\Grid\ServerAggregatesController.cs" />
+    <Compile Include="Controllers\Web\TimePicker\EventsController.cs" />
+    <Compile Include="Controllers\Web\TimePicker\ApiController.cs" />
+    <Compile Include="Controllers\Web\TimePicker\GlobalizationController.cs" />
+    <Compile Include="Controllers\Web\TimePicker\RangeSelectionController.cs" />
+    <Compile Include="Controllers\Web\TimePicker\IndexController.cs" />
+    <Compile Include="Controllers\Web\DatePicker\IndexController.cs" />
+    <Compile Include="Controllers\Web\Grid\IndexController.cs" />
+    <Compile Include="Controllers\Web\NumericTextBox\ApiController.cs" />
+    <Compile Include="Controllers\Web\NumericTextBox\EventsController.cs" />
+    <Compile Include="Controllers\Web\NumericTextBox\IndexController.cs" />
+    <Compile Include="Controllers\Web\Slider\ApiController.cs" />
+    <Compile Include="Controllers\Web\Slider\EventsController.cs" />
+    <Compile Include="Controllers\Web\Slider\IndexController.cs" />
+    <Compile Include="Controllers\SuiteController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Web\TreeView\Remote_DataController.cs" />
+    <Compile Include="Controllers\Web\TreeView\EventsController.cs" />
+    <Compile Include="Controllers\Web\TreeView\ImagesController.cs" />
+    <Compile Include="Controllers\Web\TreeView\DragDropController.cs" />
+    <Compile Include="Controllers\Web\TreeView\IndexController.cs" />
+    <Compile Include="Controllers\Web\Upload\AsyncController.cs" />
+    <Compile Include="Controllers\Web\Upload\ApiController.cs" />
+    <Compile Include="Controllers\Web\Upload\EventsController.cs" />
+    <Compile Include="Controllers\Web\Upload\IndexController.cs" />
+    <Compile Include="Controllers\Web\Window\ActionsController.cs" />
+    <Compile Include="Controllers\Web\Window\AjaxController.cs" />
+    <Compile Include="Controllers\Web\Window\ApiController.cs" />
+    <Compile Include="Controllers\Web\Window\EventsController.cs" />
+    <Compile Include="Controllers\Web\Window\IndexController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\KendoRazorViewEngine.cs" />
+    <Compile Include="Helpers\KendoWebFormViewEngine.cs" />
+    <Compile Include="ModelBinders\CultureAwareDateTimeModelBinder.cs" />
+    <Compile Include="ModelBinders\CultureAwareDecimalModelBinder.cs" />
+    <Compile Include="Models\Config.cs" />
+    <Compile Include="Helpers\HyphenatedRouteHandler.cs" />
+    <Compile Include="Models\ClientOrderViewModel.cs" />
+    <Compile Include="Models\ClientEmployeeViewModel.cs" />
+    <Compile Include="Models\BarChartsLocalDataViewModel.cs" />
+    <Compile Include="Models\CrimeData.cs" />
+    <Compile Include="Models\JobGrowth.cs" />
+    <Compile Include="Models\ScreenResolution.cs" />
+    <Compile Include="Models\CustomValidationProductViewModel.cs" />
+    <Compile Include="Models\PagerViewModel.cs" />
+    <Compile Include="Models\HeaderTemplateViewModel.cs" />
+    <Compile Include="Models\SessionClientOrderRepository.cs" />
+    <Compile Include="Models\StockDataPoint.cs" />
+    <Compile Include="Models\ElectricitySource.cs" />
+    <Compile Include="Models\EmployeeViewModel.cs" />
+    <Compile Include="Models\EngineDataPoint.cs" />
+    <Compile Include="Models\InternetUsers.cs" />
+    <Compile Include="Models\OrderViewModel.cs" />
+    <Compile Include="Models\PricePerformance.cs" />
+    <Compile Include="Models\ChartDataRepository.cs" />
+    <Compile Include="Models\ElectricityProduction.cs" />
+    <Compile Include="Models\NavigationItem.cs" />
+    <Compile Include="Models\ProductViewModel.cs" />
+    <Compile Include="Models\Northwind.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Northwind.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OfflineFilter.cs" />
+    <Compile Include="Models\NavigationExample.cs" />
+    <Compile Include="Models\NavigationProvider.cs" />
+    <Compile Include="Models\NavigationWidget.cs" />
+    <Compile Include="Models\SessionProductRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Northwind.mdf" />
+    <Content Include="App_Data\Northwind_log.ldf">
+      <DependentUpon>Northwind.mdf</DependentUpon>
+    </Content>
+    <Content Include="Areas\aspx\Views\dataviz\api\events.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\api\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\area_charts\date_axis.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\area_charts\grouped_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\area_charts\local_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\area_charts\multiple_axes.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\area_charts\remote_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\area_charts\stacked_area.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\column.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\grouped_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\date_axis.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\multiple_axes.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\stacked_bar.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\grouped_stacked_bar.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\local_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bar_charts\remote_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bubble_charts\grouped_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bubble_charts\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bubble_charts\local_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\bubble_charts\remote_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\donut_charts\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\donut_charts\local_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\donut_charts\donut_labels.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\donut_charts\remote_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\customization\plotbands.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\dashboards\car_dashboard.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\line_charts\date_axis.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\line_charts\grouped_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\line_charts\multiple_axes.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\line_charts\stacked_line.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\scatter_charts\date_axis.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\scatter_charts\grouped_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\scatter_charts\multiple_axes.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\scatter_charts\scatter_line.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\scatter_charts\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\scatter_charts\local_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\scatter_charts\remote_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\pie_charts\pie_labels.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\pie_charts\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\pie_charts\local_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\pie_charts\remote_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\line_charts\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\line_charts\local_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\line_charts\remote_data.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\linear_gauge\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\linear_gauge\scale_options.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\area_charts\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\datepicker\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\datepicker\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\datepicker\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\datepicker\rangeselection.aspx" />
+    <Content Include="Areas\aspx\Views\web\datepicker\template.aspx" />
+    <Content Include="Areas\aspx\Views\web\datetimepicker\globalization.aspx" />
+    <Content Include="Areas\aspx\Views\web\editor\all_tools.aspx" />
+    <Content Include="Areas\aspx\Views\web\editor\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\editor\custom_tools.aspx" />
+    <Content Include="Areas\aspx\Views\web\editor\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\editor\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\editor\snippets.aspx" />
+    <Content Include="Areas\aspx\Views\web\editor\styles.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\aggregates.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\ajaxbinding.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\column_reordering.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\column_resizing.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\columnsettings.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\column_menu.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\foreignkeycolumn.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\editing_custom.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\headertemplate.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\custom_command.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\globalization.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\rowtemplate.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\serverrowtemplate.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\virtualization_remote_data.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\editingcustomvalidation.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\detailtemplate.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\serverhierarchy.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\serverediting.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\serverdetails.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\serverbinding.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\serveraggregates.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\selection.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\local_data.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\hierarchy.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\editing_inline.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\editing.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\customserverbinding.aspx" />
+    <Content Include="Areas\aspx\Views\web\grid\customajaxbinding.aspx" />
+    <Content Include="Areas\aspx\Views\web\listview\editing.aspx" />
+    <Content Include="Areas\aspx\Views\web\listview\EditorTemplates\ProductViewModel.ascx" />
+    <Content Include="Areas\aspx\Views\web\listview\selection.aspx" />
+    <Content Include="Areas\aspx\Views\web\listview\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\numerictextbox\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\numerictextbox\events.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\radial_gauge\index.aspx" />
+    <Content Include="Areas\aspx\Views\dataviz\radial_gauge\scale_options.aspx" />
+    <Content Include="Areas\aspx\Views\web\numerictextbox\globalization.aspx" />
+    <Content Include="Areas\aspx\Views\web\slider\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\slider\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\timepicker\globalization.aspx" />
+    <Content Include="Areas\aspx\Views\web\upload\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\upload\async.aspx" />
+    <Content Include="Areas\aspx\Views\web\upload\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\numerictextbox\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\upload\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\upload\result.aspx" />
+    <Content Include="Areas\razor\Views\web\listview\EditorTemplates\ProductViewModel.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="Views\Shared\EditorTemplates\GridForeignKey.ascx" />
+    <Content Include="Views\The-views-are-in-the-Areas-folder.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\aspx\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\aspx\Views\Shared\Web.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\Shared\_WebLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Suite\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\web\upload\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\upload\async.cshtml" />
+    <Content Include="Areas\razor\Views\web\upload\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\upload\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\upload\result.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\web\window\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\web\datepicker\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\web\slider\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\slider\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\slider\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\Shared\_DataVizLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\aspx\Views\Shared\DataViz.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Source.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Navigation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\web\grid\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\razor\Views\web\numerictextbox\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\numerictextbox\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\window\actions.cshtml" />
+    <Content Include="Areas\razor\Views\web\numerictextbox\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\timepicker\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\window\ajax.cshtml" />
+    <Content Include="Areas\razor\Views\web\window\ajaxcontent.cshtml" />
+    <Content Include="Areas\razor\Views\web\window\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\window\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\customajaxbinding.cshtml" />
+    <Content Include="Areas\razor\Views\web\treeview\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\treeview\dragdrop.cshtml" />
+    <Content Include="Areas\razor\Views\web\treeview\images.cshtml" />
+    <Content Include="Areas\razor\Views\web\treeview\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\customserverbinding.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\column_resizing.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\column_reordering.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\serverbinding.cshtml" />
+    <Content Include="Areas\razor\Views\web\tabstrip\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\tabstrip\images.cshtml" />
+    <Content Include="Areas\razor\Views\web\tabstrip\ajax.cshtml" />
+    <Content Include="Areas\razor\Views\web\tabstrip\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\tabstrip\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\aggregates.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\serveraggregates.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\radial_gauge\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\radial_gauge\scale_options.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\linear_gauge\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\linear_gauge\scale_options.cshtml" />
+    <Content Include="Areas\razor\Views\web\splitter\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\splitter\ajax.cshtml" />
+    <Content Include="Areas\razor\Views\web\splitter\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\serverediting.cshtml" />
+    <Content Include="Areas\razor\Views\web\combobox\index.cshtml" />
+    <Content Include="Areas\aspx\Views\web\slider\index.aspx" />
+    <Content Include="Areas\razor\Views\web\splitter\api.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\area_charts\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\editing.cshtml" />
+    <Content Include="Areas\razor\Views\web\dropdownlist\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\autocomplete\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\panelbar\ajax.cshtml" />
+    <Content Include="Areas\razor\Views\web\panelbar\animation.cshtml" />
+    <Content Include="Areas\razor\Views\web\panelbar\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\panelbar\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\panelbar\images.cshtml" />
+    <Content Include="Areas\razor\Views\web\panelbar\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\datepicker\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\datepicker\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\datepicker\rangeselection.cshtml" />
+    <Content Include="Areas\razor\Views\web\datepicker\template.cshtml" />
+    <Content Include="Areas\razor\Views\web\timepicker\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\timepicker\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\timepicker\rangeselection.cshtml" />
+    <Content Include="Areas\aspx\Views\web\timepicker\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\timepicker\rangeselection.aspx" />
+    <Content Include="Areas\aspx\Views\web\timepicker\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\timepicker\index.aspx" />
+    <Content Include="Areas\razor\Views\web\datetimepicker\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\datetimepicker\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\datetimepicker\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\datetimepicker\rangeselection.cshtml" />
+    <Content Include="Areas\razor\Views\web\datetimepicker\template.cshtml" />
+    <Content Include="Areas\aspx\Views\web\datetimepicker\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\datetimepicker\template.aspx" />
+    <Content Include="Areas\aspx\Views\web\datetimepicker\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\datetimepicker\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\datetimepicker\rangeselection.aspx" />
+    <Content Include="Areas\razor\Views\dataviz\area_charts\remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\web\dropdownlist\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\dropdownlist\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\dropdownlist\remotedatasource.cshtml" />
+    <Content Include="Areas\razor\Views\web\dropdownlist\template.cshtml" />
+    <Content Include="Areas\aspx\Views\web\dropdownlist\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\dropdownlist\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\dropdownlist\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\dropdownlist\remotedatasource.aspx" />
+    <Content Include="Areas\aspx\Views\web\dropdownlist\template.aspx" />
+    <Content Include="Areas\razor\Views\web\combobox\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\combobox\clientfiltering.cshtml" />
+    <Content Include="Areas\razor\Views\web\combobox\serverfiltering.cshtml" />
+    <Content Include="Areas\razor\Views\web\combobox\template.cshtml" />
+    <Content Include="Areas\razor\Views\web\combobox\events.cshtml" />
+    <Content Include="Areas\aspx\Views\web\combobox\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\combobox\clientfiltering.aspx" />
+    <Content Include="Areas\aspx\Views\web\combobox\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\combobox\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\combobox\serverfiltering.aspx" />
+    <Content Include="Areas\aspx\Views\web\combobox\template.aspx" />
+    <Content Include="Areas\razor\Views\web\editor\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\calendar\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\menu\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\autocomplete\template.cshtml" />
+    <Content Include="Areas\razor\Views\web\autocomplete\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\autocomplete\clientfiltering.cshtml" />
+    <Content Include="Areas\razor\Views\web\autocomplete\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\autocomplete\serverfiltering.cshtml" />
+    <Content Include="Areas\aspx\Views\web\autocomplete\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\autocomplete\clientfiltering.aspx" />
+    <Content Include="Areas\aspx\Views\web\autocomplete\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\autocomplete\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\autocomplete\serverfiltering.aspx" />
+    <Content Include="Areas\aspx\Views\web\autocomplete\template.aspx" />
+    <Content Include="Areas\razor\Views\web\calendar\template.cshtml" />
+    <Content Include="Areas\razor\Views\web\calendar\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\calendar\api.cshtml" />
+    <Content Include="Areas\aspx\Views\web\calendar\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\calendar\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\calendar\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\calendar\template.aspx" />
+    <Content Include="Areas\razor\Views\web\grid\local_data.cshtml" />
+    <Content Include="Areas\razor\Views\web\menu\images.cshtml" />
+    <Content Include="Areas\razor\Views\web\menu\orientation.cshtml" />
+    <Content Include="Areas\razor\Views\web\menu\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\menu\sitemapbinding.cshtml" />
+    <Content Include="Areas\razor\Views\web\menu\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\menu\modelbinding.cshtml" />
+    <Content Include="Areas\aspx\Views\web\menu\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\menu\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\menu\images.aspx" />
+    <Content Include="Areas\aspx\Views\web\menu\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\menu\modelbinding.aspx" />
+    <Content Include="Areas\aspx\Views\web\menu\orientation.aspx" />
+    <Content Include="Areas\aspx\Views\web\menu\sitemapbinding.aspx" />
+    <Content Include="Areas\razor\Views\web\grid\serverhierarchy.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\serverdetails.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\area_charts\local_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\column.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\stacked_bar.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\grouped_stacked_bar.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\multiple_axes.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\local_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\line_charts\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\line_charts\local_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\line_charts\remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\pie_charts\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\pie_charts\local_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\pie_charts\remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\pie_charts\pie_labels.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\scatter_charts\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\scatter_charts\local_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\scatter_charts\remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\scatter_charts\scatter_line.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\scatter_charts\multiple_axes.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\customization\plotbands.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\api\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\api\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\api.cshtml" />
+    <Content Include="Areas\aspx\Views\web\window\actions.aspx" />
+    <Content Include="Areas\aspx\Views\web\window\ajax.aspx" />
+    <Content Include="Areas\aspx\Views\web\window\ajaxcontent.aspx" />
+    <Content Include="Areas\aspx\Views\web\window\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\window\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\window\index.aspx" />
+    <Content Include="Areas\razor\Views\dataviz\dashboards\car_dashboard.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\editing_inline.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Currency.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Date.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Integer.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Number.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Time.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\hierarchy.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\selection.cshtml" />
+    <Content Include="Areas\aspx\Views\web\panelbar\ajax.aspx" />
+    <Content Include="Areas\aspx\Views\web\panelbar\animation.aspx" />
+    <Content Include="Areas\aspx\Views\web\panelbar\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\panelbar\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\panelbar\images.aspx" />
+    <Content Include="Areas\aspx\Views\web\panelbar\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\tabstrip\ajax.aspx" />
+    <Content Include="Areas\aspx\Views\web\tabstrip\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\tabstrip\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\tabstrip\images.aspx" />
+    <Content Include="Areas\aspx\Views\web\tabstrip\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\splitter\ajax.aspx" />
+    <Content Include="Areas\aspx\Views\web\splitter\api.aspx" />
+    <Content Include="Areas\aspx\Views\web\splitter\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\splitter\index.aspx" />
+    <Content Include="Areas\aspx\Views\web\treeview\dragdrop.aspx" />
+    <Content Include="Areas\aspx\Views\web\treeview\events.aspx" />
+    <Content Include="Areas\aspx\Views\web\treeview\images.aspx" />
+    <Content Include="Areas\aspx\Views\web\treeview\index.aspx" />
+    <Content Include="Areas\razor\Views\web\grid\ajaxbinding.cshtml" />
+    <Content Include="Areas\razor\Views\web\editor\events.cshtml" />
+    <Content Include="Areas\razor\Views\web\editor\api.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\detailtemplate.cshtml" />
+    <Content Include="Areas\razor\Views\web\combobox\cascadingcombobox.cshtml" />
+    <Content Include="Areas\aspx\Views\web\dropdownlist\cascadingdropdownlist.aspx" />
+    <Content Include="Areas\aspx\Views\web\combobox\cascadingcombobox.aspx" />
+    <Content Include="Areas\razor\Views\web\dropdownlist\cascadingdropdownlist.cshtml" />
+    <Content Include="Areas\razor\Views\web\calendar\selectaction.cshtml" />
+    <Content Include="Areas\aspx\Views\web\calendar\selectaction.aspx" />
+    <Content Include="Areas\razor\Views\web\calendar\globalization.cshtml" />
+    <Content Include="Areas\aspx\Views\web\calendar\globalization.aspx" />
+    <Content Include="Areas\razor\Views\web\datepicker\globalization.cshtml" />
+    <Content Include="Areas\aspx\Views\web\datepicker\globalization.aspx" />
+    <Content Include="Areas\razor\Views\web\datetimepicker\globalization.cshtml" />
+    <Content Include="Areas\razor\Views\web\numerictextbox\globalization.cshtml" />
+    <Content Include="Areas\razor\Views\web\timepicker\globalization.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\editingcustomvalidation.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\date_axis.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\scatter_charts\date_axis.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\serverrowtemplate.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\rowtemplate.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\virtualization_remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\globalization.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\columnsettings.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\custom_command.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\paging.cshtml" />
+    <Content Include="Areas\aspx\Views\web\grid\paging.aspx" />
+    <Content Include="Areas\razor\Views\web\grid\headertemplate.cshtml" />
+    <Content Include="Areas\razor\Views\web\listview\index.cshtml" />
+    <Content Include="Areas\razor\Views\web\listview\editing.cshtml" />
+    <Content Include="Areas\razor\Views\web\listview\selection.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\donut_charts\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\donut_charts\local_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\donut_charts\donut_labels.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\donut_charts\remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\editing_custom.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\EditorTemplates\ClientEmployee.cshtml" />
+    <Content Include="Areas\aspx\Views\web\grid\EditorTemplates\ClientEmployee.ascx" />
+    <Content Include="Areas\razor\Views\web\tabstrip\animation.cshtml" />
+    <Content Include="Areas\aspx\Views\web\tabstrip\animation.aspx" />
+    <Content Include="Areas\razor\Views\dataviz\bubble_charts\index.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bubble_charts\local_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bubble_charts\remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\web\editor\globalization.cshtml" />
+    <Content Include="Areas\aspx\Views\web\editor\globalization.aspx" />
+    <Content Include="Areas\razor\Views\web\treeview\remote_data.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\foreignkeycolumn.cshtml" />
+    <Content Include="Areas\razor\Views\web\editor\custom_tools.cshtml" />
+    <Content Include="Areas\razor\Views\web\editor\all_tools.cshtml" />
+    <Content Include="Areas\razor\Views\web\editor\snippets.cshtml" />
+    <Content Include="Areas\razor\Views\web\editor\styles.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bar_charts\grouped_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\scatter_charts\grouped_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\bubble_charts\grouped_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\area_charts\stacked_area.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\area_charts\date_axis.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\area_charts\multiple_axes.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\area_charts\grouped_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\line_charts\date_axis.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\line_charts\grouped_data.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\line_charts\multiple_axes.cshtml" />
+    <Content Include="Areas\razor\Views\dataviz\line_charts\stacked_line.cshtml" />
+    <Content Include="Areas\razor\Views\web\grid\column_menu.cshtml" />
+    <None Include="Models\Northwind.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Northwind.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="sample.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\Currency.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Date.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Integer.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Number.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Time.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\GridForeignKey.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Northwind.dbml.layout">
+      <DependentUpon>Northwind.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53702</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

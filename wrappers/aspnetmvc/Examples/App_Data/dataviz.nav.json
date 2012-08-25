@@ -1,0 +1,284 @@
+{
+    "chart": [
+        {
+            "text": "DataViz Widgets",
+            "spriteCssClass": "overviewIcon",
+            "documentation": "dataviz/chart",
+            "expanded": "true",
+            "packages": [ "online" ],
+            "items": [{
+                    "text": "Overview",
+                    "url": "overview/index.html"
+                }],
+            "name": "overview"
+        }, {
+            "text": "Area Charts",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartAreaIcon",
+            "items": [{
+                    "text": "Basic usage",
+                    "url": "area-charts/index.html"
+                }, {
+                    "text": "Stacked area",
+                    "url": "area-charts/stacked-area.html"
+                }, {
+                    "text": "Date axis",
+                    "url": "area-charts/date-axis.html"
+                }, {
+                    "text": "Multi-axis",
+                    "url": "area-charts/multiple-axes.html"
+                }, {
+                    "text": "Binding to remote data",
+                    "url": "area-charts/remote-data.html",
+                    "packages": [ "!offline" ]
+                }, {
+                    "text": "Binding to local data",
+                    "url": "area-charts/local-data.html"
+                }, {
+                    "text": "Binding to grouped data",
+                    "url": "area-charts/grouped-data.html",
+                    "packages": [ "!offline" ]
+            }],
+            "name": "area-charts"
+        }, {
+            "text": "Bar Charts",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartBarIcon",
+            "items": [{
+                    "text": "Basic usage",
+                    "url": "bar-charts/index.html"
+                }, {
+                    "text": "Column chart",
+                    "url": "bar-charts/column.html"
+                }, {
+                    "text": "Stacked bars",
+                    "url": "bar-charts/stacked-bar.html"
+                }, {
+                    "text": "Stacked and grouped bars",
+                    "url": "bar-charts/grouped-stacked-bar.html"
+                }, {
+                    "text": "Date axis",
+                    "url": "bar-charts/date-axis.html"
+                }, {
+                    "text": "Multi-axis",
+                    "url": "bar-charts/multiple-axes.html"
+                }, {
+                    "text": "Binding to remote data",
+                    "url": "bar-charts/remote-data.html",
+                    "packages": [ "!offline" ]
+                }, {
+                    "text": "Binding to local data",
+                    "url": "bar-charts/local-data.html"
+                }, {
+                    "text": "Binding to grouped data",
+                    "url": "bar-charts/grouped-data.html",
+                    "packages": [ "!offline" ]
+            }],
+            "name": "bar-charts"
+        }, {
+            "text": "Bubble Charts",
+            "name": "bubble-charts",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartBubbleIcon",
+            "items": [{
+                    "text": "Basic usage",
+                    "url": "bubble-charts/index.html"
+                }, {
+                    "text": "Binding to remote data",
+                    "url": "bubble-charts/remote-data.html",
+                    "packages": [ "!offline" ]
+                }, {
+                    "text": "Binding to local data",
+                    "url": "bubble-charts/local-data.html"
+                }, {
+                    "text": "Binding to grouped data",
+                    "url": "bubble-charts/grouped-data.html",
+                    "packages": [ "!offline" ]
+            }]
+        }, {
+            "text": "Line Charts",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartLineIcon",
+            "items": [{
+                    "text": "Basic usage",
+                    "url": "line-charts/index.html"
+                }, {
+                    "text": "Stacked line",
+                    "url": "line-charts/stacked-line.html"
+                }, {
+                    "text": "Date axis",
+                    "url": "line-charts/date-axis.html"
+                }, {
+                    "text": "Multi-axis",
+                    "url": "line-charts/multiple-axes.html"
+                }, {
+                    "text": "Binding to remote data",
+                    "url": "line-charts/remote-data.html",
+                    "packages": [ "!offline" ]
+                }, {
+                    "text": "Binding to local data",
+                    "url": "line-charts/local-data.html"
+                }, {
+                    "text": "Binding to grouped data",
+                    "url": "line-charts/grouped-data.html",
+                    "packages": [ "!offline" ]
+            }],
+            "name": "line-charts"
+        }, {
+            "text": "Donut Charts",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartDonutIcon",
+            "items": [{
+                    "text": "Basic usage",
+                    "url": "donut-charts/index.html"
+                }, {
+                    "text": "Donut labels",
+                    "url": "donut-charts/donut-labels.html"
+                }, {
+                    "text": "Binding to remote data",
+                    "url": "donut-charts/remote-data.html",
+                    "packages": [ "!offline" ]
+                }, {
+                    "text": "Binding to local data",
+                    "url": "donut-charts/local-data.html"
+            }],
+            "name": "donut-charts"
+        }, {
+            "text": "Pie Charts",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartPieIcon",
+            "items": [{
+                    "text": "Basic usage",
+                    "url": "pie-charts/index.html"
+                }, {
+                    "text": "Pie labels",
+                    "url": "pie-charts/pie-labels.html"
+                }, {
+                    "text": "Binding to remote data",
+                    "url": "pie-charts/remote-data.html",
+                    "packages": [ "!offline" ]
+                }, {
+                    "text": "Binding to local data",
+                    "url": "pie-charts/local-data.html"
+            }],
+            "name": "pie-charts"
+        }, {
+            "text": "Scatter Charts",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartScatterIcon",
+            "items": [{
+                    "text": "Basic usage",
+                    "url": "scatter-charts/index.html"
+                }, {
+                    "text": "Scatter line chart",
+                    "url": "scatter-charts/scatter-line.html"
+                }, {
+                    "text": "Date axis",
+                    "url": "scatter-charts/date-axis.html",
+                    "packages": [ "!offline" ]
+                }, {
+                    "text": "Multi-axis",
+                    "url": "scatter-charts/multiple-axes.html"
+                }, {
+                    "text": "Binding to remote data",
+                    "url": "scatter-charts/remote-data.html",
+                    "packages": [ "!offline" ]
+                }, {
+                    "text": "Binding to local data",
+                    "url": "scatter-charts/local-data.html"
+                }, {
+                    "text": "Binding to grouped data",
+                    "url": "scatter-charts/grouped-data.html",
+                    "packages": [ "!offline" ]
+            }],
+            "name": "scatter-charts"
+        }, {
+            "text": "Customization",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartIcon",
+            "items": [{
+                    "text": "PlotBands",
+                    "url": "customization/plotbands.html",
+                    "packages": [ "!offline" ]
+                }],
+            "name": "customization"
+        }, {
+            "text": "API",
+            "documentation": "dataviz/chart",
+            "spriteCssClass": "chartIcon",
+            "items": [{
+                    "text": "Methods",
+                    "url": "api/index.html"
+                }, {
+                    "text": "Events",
+                    "url": "api/events.html",
+                    "packages": [ "!offline" ]
+            }],
+            "name": "api"
+        }
+    ],
+    "gauges": [
+        {
+            "text": "Radial Gauge",
+            "spriteCssClass": "gaugeRadialIcon",
+            "documentation": "dataviz/radialgauge",
+            "items": [{
+                "text": "Basic usage",
+                "url": "radial-gauge/index.html"
+            }, {
+                "text": "Scale options",
+                "url": "radial-gauge/scale-options.html"
+            }],
+            "name": "radial-gauge"
+        }, {
+            "text": "Linear Gauge",
+            "spriteCssClass": "gaugeLinearIcon",
+            "documentation": "dataviz/lineargauge",
+            "items": [{
+                "text": "Basic usage",
+                "url": "linear-gauge/index.html"
+            }, {
+                "text": "Scale options",
+                "url": "linear-gauge/scale-options.html"
+            }],
+            "name": "linear-gauge"
+        }
+    ],
+    "Sample Dashboards": [
+        {
+            "text": "Performance Benchmark",
+            "spriteCssClass": "chartIcon",
+            "thumbnailUrl": "content/dataviz/dashboards/performance.gif",
+            "packages": [ "!mvc" ],
+            "expanded": "true",
+            "items": [{
+                "text": "Launch",
+                "url": "dashboards/high-performance.html"
+            }],
+            "name": "high-performance"
+        },
+        {
+            "text": "Car Dashboard",
+            "spriteCssClass": "gaugeRadialIcon",
+            "thumbnailUrl": "content/dataviz/dashboards/car.gif",
+            "expanded": "true",
+            "items": [{
+                "text": "Launch",
+                "url": "dashboards/car-dashboard.html"
+            }],
+            "name": "car-dashboard"
+        },
+        {
+            "text": "Stock History",
+            "spriteCssClass": "chartAreaIcon",
+            "thumbnailUrl": "content/dataviz/dashboards/stock.gif",
+            "expanded": "true",
+            "packages": [ "!offline", "!mvc" ],
+            "items": [{
+                "text": "Launch",
+                "url": "dashboards/stock-history.html"
+            }],
+            "name": "stock-history"
+        }
+    ]
+}

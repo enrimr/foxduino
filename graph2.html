@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'></meta>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Real Time Plotting with HMTL 5</title>
+    
+  </head>
+  <body onload="recalc()">
+
+<form  name="funf">
+	<input type = checkbox name = markers onclick="recalc()">See Markers 
+</form>
+
+
+<canvas id="plot" width="501" height="501">
+<p>Your browser doesn't support canvas.</p>
+</canvas>
+
+<script type="text/javascript"> 
+
+/*this is the main function, updates points and options*/
+function recalc() 
+{
+	var points = [];
+	
+    /*function*/
+	var fun = "ring";
+
+	/*number of points*/
+	var num = 34;	
+
+	dx = 2.0/(num-1);
+	
+	/*evaluate function*/
+	for (x=-1,i=0;i<=num;i++)
+	{
+		if (fun=="x2")
+			y=x*x;
+		else if (fun=="x3")
+			y=x*x*x;
+		else if (fun=="ring")
+			y=0.02*Math.exp(-4*x)*Math.sin(10*Math.PI*x);
+		else if (fun=="sin")
+			y = Math.sin(Math.PI*x);
+		else if (fun=="cos")
+			y = Math.cos(Math.PI*x);
+		points.push([x,y]);
+		x+=dx;
+	}
+
+	/*draw markers?*/
+	markers=false; 	/*default*/
+	if (document.funf.markers.checked)
+		markers=true;
+		
+	draw(points, markers);
+}
+
+/*this function does the actual drawing*/
+function draw(points, markers) 
+{
+	var canvas = document.getElementById('plot');
+	var i, x, y;
+	
+	if(canvas.getContext) 
+	{
+		var scale=100;
+		
+		var ctx = canvas.getContext('2d');
+		ctx.clearRect(0, 0, 250, 150);
+
+		ctx.strokeStyle = "#000000";
+		ctx.strokeRect(0, 0, 250, 150);
+		
+		
+		// draw points			
+		ctx.save();
+		ctx.translate(100,100);
+		ctx.scale(1.0, -1.0);
+		ctx.strokeStyle = "#FF0000";
+		ctx.lineWidth = 3;
+		ctx.beginPath();
+		
+		if(points.length > 0) 
+		{
+			x = points[0][0]*scale;
+			y = points[0][1]*scale;
+			ctx.moveTo(x, y);
+			for(i = 0; i < points.length; i += 1) 
+			{
+				x = points[i][0]*scale;
+				y = points[i][1]*scale;
+				ctx.lineTo(x, y);
+			}
+			ctx.stroke();
+			
+			if (markers)
+			{
+				ctx.fillStyle="#009900";
+				for(i = 0; i < points.length; i += 1) 
+				{
+					x = points[i][0]*scale;
+					y = points[i][1]*scale;
+					ctx.beginPath();
+					ctx.arc(x, y, 5, 0, 2*Math.PI, false);
+					ctx.fill();
+					ctx.stroke();
+				}
+			}
+		}
+		ctx.restore();
+		
+		ctx.font = 'italic 20px sans-serif';
+		ctx.textBaseline = 'top';
+	}
+}
+
+</script>
+
+
+
+  </body>
+
+</html>
+

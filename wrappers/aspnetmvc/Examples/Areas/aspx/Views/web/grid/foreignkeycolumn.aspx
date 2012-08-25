@@ -1,0 +1,47 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Areas/aspx/Views/Shared/Web.Master" %>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+    <%: Html.Kendo().Grid<Kendo.Mvc.Examples.Models.ClientOrderViewModel>()
+        .Name("Grid")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.OrderID);
+            columns.ForeignKey(p => p.EmployeeID, (System.Collections.IEnumerable)ViewData["employees"], "EmployeeID", "EmployeeName");
+            columns.Bound(p => p.ShipAddress);
+        })
+        .ToolBar(toolBar => toolBar.Save())
+        .Editable(editable => editable.Mode(GridEditMode.InCell))
+        .Pageable()
+        .Sortable()
+        .Scrollable()
+        .Filterable()
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .Batch(true)
+            .ServerOperation(false)
+            .Events(events => events.Error("errorHandler"))
+            .Model(model =>
+            {
+                model.Id(p => p.OrderID);
+                model.Field(p => p.OrderID).Editable(false);
+            })
+            .Read(read => read.Action("ForeignKeyColumn_Read", "Grid"))
+            .Update(update => update.Action("ForeignKeyColumn_Update", "Grid"))
+        )
+    %>
+    <script type="text/javascript">
+        function errorHandler(e) {
+            if (e.errors) {
+                var message = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            message += this + "\n";
+                        });
+                    }
+                });
+                alert(message);
+            }
+        }
+    </script>
+</asp:Content>

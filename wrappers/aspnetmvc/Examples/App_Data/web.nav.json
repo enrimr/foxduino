@@ -1,0 +1,977 @@
+{   "UI Widgets": [
+        {
+            "text": "UI Widgets",
+            "name": "overview",
+            "spriteCssClass": "overviewIcon",
+            "expanded": "true",
+            "packages": [ "online" ],
+            "items": [
+                {
+                    "text": "Overview",
+                    "url": "overview/index.html"
+                }
+            ]
+        },
+        {
+            "text": "AutoComplete",
+            "name": "autocomplete",
+            "documentation": "web/autocomplete",
+            "spriteCssClass": "autoCompleteIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "autocomplete/index.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Binding to remote data",
+                    "url": "autocomplete/remotedatasource.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Server filtering",
+                    "url": "autocomplete/serverfiltering.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Client filtering",
+                    "url": "autocomplete/clientfiltering.html"
+                },
+                {
+                    "text": "Customizing templates",
+                    "url": "autocomplete/template.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "autocomplete/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "autocomplete/api.html"
+                }
+            ]
+        },
+        {
+            "text": "Calendar",
+            "name": "calendar",
+            "documentation": "web/calendar",
+            "spriteCssClass": "calendarIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "calendar/index.html"
+                },
+                {
+                    "text": "Customizing templates",
+                    "url": "calendar/template.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "calendar/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "calendar/api.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Globalization",
+                    "url": "calendar/globalization.html"
+                }
+            ]
+        },
+        {
+            "text": "ComboBox",
+            "name": "combobox",
+            "documentation": "web/combobox",
+            "spriteCssClass": "comboBoxIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "combobox/index.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Binding to remote data",
+                    "url": "combobox/remotedatasource.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Server filtering",
+                    "url": "combobox/serverfiltering.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Client filtering",
+                    "url": "combobox/clientfiltering.html"
+                },
+
+                {
+                    "text": "Customizing templates",
+                    "url": "combobox/template.html"
+                },
+                {
+                    "text": "Cascading ComboBox",
+                    "url": "combobox/cascadingcombobox.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "combobox/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "combobox/api.html"
+                }
+            ]
+        },
+        {
+            "text": "DatePicker",
+            "name": "datepicker",
+            "documentation": "web/datepicker",
+            "spriteCssClass": "datePickerIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "datepicker/index.html"
+                },
+                {
+                    "text": "Range selection",
+                    "url": "datepicker/rangeselection.html"
+                },
+                {
+                    "text": "Customizing templates",
+                    "url": "datepicker/template.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "datepicker/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "datepicker/api.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Globalization",
+                    "url": "datepicker/globalization.html"
+                }
+            ]
+        },
+        {
+            "text": "DateTimePicker",
+            "name": "datetimepicker",
+            "documentation": "web/datetimepicker",
+            "spriteCssClass": "dateTimePickerIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "datetimepicker/index.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Range selection",
+                    "url": "datetimepicker/rangeselection.html"
+                },
+                {
+                    "text": "Customizing templates",
+                    "url": "datetimepicker/template.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "datetimepicker/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "datetimepicker/api.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Globalization",
+                    "url": "datetimepicker/globalization.html"
+                }
+            ]
+        },
+        {
+            "text": "DropDownList",
+            "name": "dropdownlist",
+            "documentation": "web/dropdownlist",
+            "spriteCssClass": "dropDownListIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "dropdownlist/index.html"
+                },
+                {
+                    "text": "Binding to remote data",
+                    "url": "dropdownlist/remotedatasource.html"
+                },
+                {
+                    "text": "Customizing templates",
+                    "url": "dropdownlist/template.html"
+                },
+                {
+                    "text": "Cascading DropDownList",
+                    "url": "dropdownlist/cascadingdropdownlist.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "dropdownlist/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "dropdownlist/api.html"
+                }
+            ]
+        },
+        {
+            "text": "Editor",
+            "name": "editor",
+            "documentation": "web/editor",
+            "spriteCssClass": "editorIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "editor/index.html"
+                },
+                {
+                    "text": "Custom tools",
+                    "url": "editor/custom-tools.html"
+                },
+                {
+                    "text": "All tools",
+                    "url": "editor/all-tools.html"
+                },
+                {
+                    "text": "Snippets",
+                    "url": "editor/snippets.html"
+                },
+                {
+                    "text": "Styles",
+                    "url": "editor/styles.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "editor/events.html"
+                },
+                {
+                    "packages" : [ "mvc" ],
+                    "text": "Globalization",
+                    "url": "editor/globalization.html"
+                },
+                {
+                    "text": "API",
+                    "url": "editor/api.html"
+                }
+            ]
+        },
+        {
+            "text": "Grid",
+            "name": "grid",
+            "documentation": "web/grid",
+            "spriteCssClass": "gridIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "grid/index.html"
+                },
+                {
+                    "text": "Initialization from table",
+                    "url": "grid/from-table.html",
+                    "packages": ["!mvc"]
+                },
+                {
+                    "text": "Binding to local data",
+                    "url": "grid/local-data.html"
+                },
+                {
+                    "text": "Binding to remote data",
+                    "url": "grid/remote-data.html",
+                    "packages": ["online"]
+                },
+                {
+                    "text": "Ajax binding",
+                    "url": "grid/ajaxbinding.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Custom ajax binding",
+                    "url": "grid/customajaxbinding.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Server binding",
+                    "url": "grid/serverbinding.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Custom server binding",
+                    "url": "grid/customserverbinding.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Batch editing",
+                    "url": "grid/editing.html"
+                },
+                {
+                    "text": "Inline editing",
+                    "url": "grid/editing-inline.html"
+                },
+                {
+                    "text": "Popup editing",
+                    "url": "grid/editing-popup.html",
+                    "packages": ["!mvc"]
+                },
+                {
+                    "text": "Editing custom editor",
+                    "url": "grid/editing-custom.html"
+                },
+                {
+                    "text": "Server editing",
+                    "url": "grid/serverediting.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Custom validator editing",
+                    "url": "grid/editingcustomvalidation.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Paging",
+                    "url": "grid/paging.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Virtualization of local data",
+                    "url": "grid/virtualization-local-data.html",
+                    "packages": ["!mvc"]
+                },
+                {
+                    "text": "Virtualization of remote data",
+                    "url": "grid/virtualization-remote-data.html"
+                },
+                {
+                    "text": "Hierarchy",
+                    "url": "grid/hierarchy.html"
+                },
+                {
+                    "text": "Server hierarchy",
+                    "url": "grid/serverhierarchy.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Detail template",
+                    "url": "grid/detailtemplate.html"
+                },
+                {
+                    "text": "Server detail template",
+                    "url": "grid/serverdetails.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Toolbar template",
+                    "url": "grid/toolbar-template.html",
+                    "packages": ["!mvc"]
+                },
+                {
+                    "text": "Column header template",
+                    "url": "grid/headertemplate.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Custom command",
+                    "url": "grid/custom-command.html"
+                },
+                {
+                    "text": "Aggregates",
+                    "url": "grid/aggregates.html"
+                },
+                {
+                    "text": "Server aggregates",
+                    "url": "grid/serveraggregates.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Sorting",
+                    "url": "grid/sorting.html",
+                    "packages": ["!mvc"]
+                },
+                {
+                    "text": "Selection",
+                    "url": "grid/selection.html"
+                },
+                {
+                    "text": "ForeignKey column",
+                    "url": "grid/foreignkeycolumn.html"
+                },
+                {
+                    "text": "Column reordering",
+                    "url": "grid/column-reordering.html"
+                },
+                {
+                    "text": "Column resizing",
+                    "url": "grid/column-resizing.html"
+                },
+                {
+                    "text": "Column menu",
+                    "url": "grid/column-menu.html"
+                },
+                {
+                    "text": "Column Settings",
+                    "url": "grid/columnsettings.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Row template",
+                    "url": "grid/rowtemplate.html"
+                },
+                {
+                    "text": "Server row template",
+                    "url": "grid/serverrowtemplate.html",
+                    "packages": ["mvc"]
+                },
+                {
+                    "text": "Events",
+                    "url": "grid/events.html",
+                    "packages": ["!mvc"]
+                },
+                {
+                    "text": "API",
+                    "url": "grid/api.html"
+                },
+                {
+                    "text": "Globalization",
+                    "url": "grid/globalization.html",
+                    "packages": ["mvc"]
+                }
+            ]
+        },
+        {
+            "text": "ListView",
+            "name": "listview",
+            "documentation": "web/listview",
+            "spriteCssClass": "listViewIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "listview/index.html"
+                },
+                {
+                    "text": "Binding to remote data",
+                    "url": "listview/remote-data.html",
+                    "packages": ["!mvc"]
+                },
+                {
+                    "text": "Editing",
+                    "url": "listview/editing.html"
+                },
+                {
+                    "text": "Selection",
+                    "url": "listview/selection.html"
+                }
+            ]
+        },
+        {
+            "text": "Menu",
+            "name": "menu",
+            "documentation": "web/menu",
+            "spriteCssClass": "menuIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "menu/index.html"
+                },
+                {
+                    "text": "Images",
+                    "url": "menu/images.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Direction",
+                    "url": "menu/direction.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Orientation",
+                    "url": "menu/orientation.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "SiteMapBinding",
+                    "url": "menu/sitemapbinding.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "ModelBinding",
+                    "url": "menu/modelbinding.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Animation effects",
+                    "url": "menu/animation.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "menu/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "menu/api.html"
+                }
+            ]
+        },
+        {
+            "text": "NumericTextBox",
+            "name": "numerictextbox",
+            "documentation": "web/numerictextbox",
+            "spriteCssClass": "numericTextBoxIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "numerictextbox/index.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "numerictextbox/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "numerictextbox/api.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Globalization",
+                    "url": "numerictextbox/globalization.html"
+                }
+            ]
+        },
+        {
+            "text": "PanelBar",
+            "name": "panelbar",
+            "documentation": "web/panelbar",
+            "spriteCssClass": "panelBarIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "panelbar/index.html"
+                },
+                {
+                    "text": "Images",
+                    "url": "panelbar/images.html"
+                },
+                {
+                    "text": "Loading content with AJAX",
+                    "url": "panelbar/ajax.html"
+                },
+                {
+                    "text": "Animation effects",
+                    "url": "panelbar/animation.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "panelbar/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "panelbar/api.html"
+                }
+            ]
+        },
+        {
+            "text": "Slider",
+            "name": "slider",
+            "documentation": "web/slider",
+            "spriteCssClass": "sliderIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "slider/index.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "slider/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "slider/api.html"
+                }
+            ]
+        },
+        {
+            "text": "Splitter",
+            "name": "splitter",
+            "documentation": "web/splitter",
+            "spriteCssClass": "splitterIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "splitter/index.html"
+                },
+                {
+                    "text": "Loading content with AJAX",
+                    "url": "splitter/ajax.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "splitter/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "splitter/api.html"
+                }
+            ]
+        },
+        {
+            "text": "TabStrip",
+            "name": "tabstrip",
+            "documentation": "web/tabstrip",
+            "spriteCssClass": "tabStripIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "tabstrip/index.html"
+                },
+                {
+                    "text": "Images",
+                    "url": "tabstrip/images.html"
+                },
+                {
+                    "text": "Loading content with AJAX",
+                    "url": "tabstrip/ajax.html"
+                },
+                {
+                    "text": "Animation effects",
+                    "url": "tabstrip/animation.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "tabstrip/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "tabstrip/api.html"
+                }
+            ]
+        },
+        {
+            "text": "TimePicker",
+            "name": "timepicker",
+            "documentation": "web/timepicker",
+            "spriteCssClass": "timePickerIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "timepicker/index.html"
+                },
+                {
+                    "text": "Range selection",
+                    "url": "timepicker/rangeselection.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "timepicker/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "timepicker/api.html"
+                },
+                {
+                    "packages": [ "mvc" ],
+                    "text": "Globalization",
+                    "url": "timepicker/globalization.html"
+                }
+            ]
+        },
+        {
+            "text": "TreeView",
+            "name": "treeview",
+            "documentation": "web/treeview",
+            "spriteCssClass": "treeViewIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "treeview/index.html"
+                },
+                {
+                    "text": "Drag & drop",
+                    "url": "treeview/dragdrop.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Animation effects",
+                    "url": "treeview/animation.html"
+                },
+                {
+                    "text": "Images",
+                    "url": "treeview/images.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Binding to local data",
+                    "url": "treeview/local-data.html"
+                },
+                {
+                    "text": "Binding to remote data",
+                    "url": "treeview/remote-data.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Binding to OData service",
+                    "url": "treeview/odata-binding.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Templates",
+                    "url": "treeview/templates.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "treeview/events.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "API",
+                    "url": "treeview/api.html"
+                }
+            ]
+        },
+        {
+            "text": "Upload",
+            "name": "upload",
+            "documentation": "web/upload",
+            "spriteCssClass": "uploadIcon",
+            "packages": [ "!offline" ],
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "upload/index.html"
+                },
+                {
+                    "text": "Asynchronous Upload",
+                    "url": "upload/async.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "upload/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "upload/api.html"
+                }
+            ]
+        },
+        {
+            "text": "Window",
+            "name": "window",
+            "documentation": "web/window",
+            "spriteCssClass": "windowIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "window/index.html"
+                },
+                {
+                    "text": "Customizing actions",
+                    "url": "window/actions.html"
+                },
+                {
+                    "text": "Loading content with AJAX",
+                    "url": "window/ajax.html"
+                },
+                {
+                    "packages": [ "!mvc" ],
+                    "text": "Animation effects",
+                    "url": "window/animation.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "window/events.html"
+                },
+                {
+                    "text": "API",
+                    "url": "window/api.html"
+                }
+            ]
+        }
+    ],
+    "Framework": [
+        {
+            "packages": ["!mvc"],
+            "text": "DataSource",
+            "name": "datasource",
+            "documentation": "framework/datasource",
+            "spriteCssClass": "dataSourceIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "datasource/index.html"
+                },
+                {
+                    "text": "Binding to remote data",
+                    "url": "datasource/remote-data.html"
+                },
+                {
+                    "text": "Binding to XML",
+                    "url": "datasource/xml-data.html"
+                },
+                {
+                    "text": "Remote data operations",
+                    "url": "datasource/remote-operations.html"
+                },
+                {
+                    "text": "Local data operations",
+                    "url": "datasource/local-operations.html"
+                },
+                {
+                    "text": "Shared DataSource",
+                    "url": "datasource/shared-datasource.html"
+                }
+            ]
+        },
+        {
+            "packages": ["!mvc"],
+            "text": "Templates",
+            "name": "templates",
+            "documentation": "framework/template",
+            "spriteCssClass": "templatesIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "templates/index.html"
+                },
+                {
+                    "text": "Expressions",
+                    "url": "templates/expressions.html"
+                }
+            ]
+        },
+        {
+            "packages": ["!mvc"],
+            "text": "MVVM",
+            "name": "mvvm",
+            "documentation": "framework/mvvm",
+            "spriteCssClass": "mvvmIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "mvvm/index.html"
+                },
+                {
+                    "text": "HTML element binding",
+                    "url": "mvvm/elements.html"
+                },
+                {
+                    "text": "Widget binding",
+                    "url": "mvvm/widgets.html"
+                },
+                {
+                    "text": "Attribute binding",
+                    "url": "mvvm/attributes.html"
+                },
+                {
+                    "text": "Style binding",
+                    "url": "mvvm/style.html"
+                },
+                {
+                    "text": "Event binding",
+                    "url": "mvvm/event.html"
+                },
+                {
+                    "text": "Source and template binding",
+                    "url": "mvvm/source.html"
+                },
+                {
+                    "text": "Remote binding",
+                    "url": "mvvm/remote-binding.html"
+                },
+                {
+                    "text": "Custom binding",
+                    "url": "mvvm/custom.html"
+                }
+            ]
+        },
+        {
+            "packages": ["!mvc"],
+            "text": "Drag & Drop",
+            "name": "dragdrop",
+            "documentation": "framework/drag",
+            "spriteCssClass": "dragDropIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "dragdrop/index.html"
+                },
+                {
+                    "text": "Container",
+                    "url": "dragdrop/container.html"
+                },
+                {
+                    "text": "Events",
+                    "url": "dragdrop/events.html"
+                }
+            ]
+        },
+        {
+            "packages": ["!mvc"],
+            "text": "Validator",
+            "name": "validator",
+            "documentation": "framework/validator",
+            "spriteCssClass": "validatorIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "validator/index.html"
+                }
+            ]
+        },
+        {
+            "packages": ["!mvc"],
+            "text": "Globalization",
+            "name": "globalization",
+            "documentation": "framework/globalization",
+            "spriteCssClass": "globalizationIcon",
+            "items": [
+                {
+                    "text": "Basic usage",
+                    "url": "globalization/index.html"
+                }
+            ]
+        },
+        {
+            "packages": ["!mvc"],
+            "text": "Styling",
+            "name": "styling",
+            "documentation": "framework/styling",
+            "spriteCssClass": "stylingIcon",
+            "items": [
+                {
+                    "text": "Forms",
+                    "url": "styling/index.html"
+                },
+                {
+                    "text": "Panels",
+                    "url": "styling/panels.html"
+                },
+                {
+                    "text": "Icons",
+                    "url": "styling/icons.html"
+                }
+            ]
+        },
+        {
+            "text": "Integration",
+            "name": "integration",
+            "spriteCssClass": "integrationIcon",
+            "packages": [ "online" ],
+            "items": [
+                {
+                    "text": "Using KnockoutJS with Kendo",
+                    "url": "integration/index.html"
+                },
+                {
+                    "text": "Using jQuery templates with Kendo",
+                    "url": "integration/jquery-templates.html"
+                }
+            ]
+        }
+    ]
+}
